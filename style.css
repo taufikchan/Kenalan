@@ -1,0 +1,116 @@
+:root {
+--tombol-bg: rgba(0, 0, 0, .3); 
+--tombol-teks: #fff;
+--tombol-bingkai: #fff;
+--bingkai: 8px;
+--bingkai-kiri: 1.3px solid var(--tombol-bingkai);
+--bingkai-kanan: 1.3px solid var(--tombol-bingkai);
+--gaya-font: 'Shippori Antique', sans-serif;
+--gaya-font2: 'Dancing Script', sans-serif;
+}
+
+body{background-color:#000;font-family:var(--gaya-font);padding: 0;margin:0;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
+div:nth-child(1)::before{
+    content:"\00A9  Muhammad Taufik";
+    color:white;opacity:.05;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:100;
+    
+}
+
+#main-intro {
+    width:100%; min-height: 100vh;display:flex;align-items:center;text-align:center;justify-content:center;
+}
+
+#intro{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:1;transition:all .7s ease;}
+#intro > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
+
+#mulai img{display:inline-flex;background:none;width:130px;height:130px;transition:all .3s ease;} 
+#ket, .halo{text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);font-size:17px;font-weight:700;color:white}
+#ket{margin-top:25px !important;font-weight:400;}
+#mulai img:hover{transform:scale(.9);}
+
+.stiker > img{
+    position: relative;
+    z-index: -1;
+    /* margin-top: px; */
+    background: rgba(255, 255, 255, 0.2);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%;padding:10px;width:100px;height:100px;margin:20px 0;}
+
+#bq{
+    display: none;
+    position: relative;
+    z-index: 2;
+    margin-top:0px !important;background:var(--tombol-bg);border-radius:18px 0 18px 0;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;
+    transition:all 1s ease;margin-top:120px;margin-left:0;margin-right:0;color:var(--tombol-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+#bq{text-align:center;line-height:1.3em;padding:20px;}
+#bq::before{content:attr(data-text);opacity:.7;font-family: sans-serif;position:absolute;left:8px;top:8px;min-width:15px;font-size:16px;text-align:center; z-index: -1;}
+#bq::after{content: "";position: absolute;border: 1px solid #fff;border-radius:18px 0 18px 0;top: -8px;bottom: -8px;left: -8px;right: -8px;z-index: -1}
+#bq p{font-size:16px;font-weight:700;line-height:1.4em;transition:all .5s ease;margin-bottom:0px;}
+#bq .gaya2{font-size:15px;font-weight:400}
+#bq > #pesan3{position: absolute;opacity:0;transform: scale(.1);transition:all .7s ease;}
+#bq > #pesan5, #bq > #pesan8{margin-top:25px}
+#bq p:not(#opsL, #kalimat, #pesan3, .gaya2){display:none;}
+#bq > #opsL{text-align:right;font-size:11px;font-weight:400;display:none;margin-top:24px;color: grey;transition:all .2s ease;position; relative;z-index:100}
+.garis {
+    display: block;
+    height: 1px;
+    min-width: 250px;
+}
+
+@-webkit-keyframes slide-up {
+        0% {  }
+        100% { -webkit-transform: translateY(-100%); }
+}
+
+.up {
+  -webkit-animation: slide-up .6s cubic-bezier(0, 0, 0.2, 1) 600ms;
+  -moz-animation: slide-up .6s  cubic-bezier(0, 0, 0.2, 1) 600ms;
+  animation: slide-up .6s  cubic-bezier(0.4, 0, 0, 1) 600ms;
+}
+
+#content {
+    display: none;
+    color: #fff;
+}
+
+
+
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .foto-profile, .sampul {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .sampul {
+        height: 245px;
+        background-image: url('sampul-taufik.jpg');
+        background-color: gray;        width: 100%;
+    }
+    
+    .foto-profile {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-image: url('taufik.jpg');
+        position: relative;
+        margin-top: -60px;
+        
+    }
+    
+    .bar-pro {
+        widows: 100%;
+        display: flex;
+        background-color: grey;
+    }
+    .bar-pro>div {
+        background-color: #006fff;
+        height: 10px;
+    }
+
+.card {
+    color: #fff;
+    background: var(--tombol-bg);
+}
